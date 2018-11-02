@@ -1,13 +1,11 @@
 {
   "name": "wxmp-convert",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "skunight/wxmp-convert",
   "author": "zzy",
   "license": "MIT",
-  "bin": {
-    "wxcv": "bin/wxcv"
-  },
+  "bin": "bin/wxcv",
   "dependencies": {
     "commander": "^2.19.0",
     "fast-glob": "^2.2.3",

@@ -23,8 +23,8 @@ function _changeExtName(file,ext,newExt) {
 }
 class Convert {
   static async convert(inPath,out,type) {
-    const realPath = path.join(__dirname, '../', inPath)
-    const outPath = path.join(__dirname, '../', out)
+    const realPath = path.join(process.cwd(), inPath)
+    const outPath = path.join(process.cwd(), out)
     fs.copySync(realPath,outPath)
     const globPath = path.join(outPath, '/**/*{.js,.wxml,.wxss}')
     const files = await fg(globPath)

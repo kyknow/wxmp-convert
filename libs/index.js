@@ -13,7 +13,7 @@ function _convertFile(file,type) {
 function _changeFileContent(file,type) {
   let str = fs.readFileSync(file).toString()
   str = str.replace(/wx\./g,`${type}.`)
-  str = str.replace(/wx:/g,`${type}:`)
+  // str = str.replace(/wx:/g,`${type}:`)
   str = str.replace(/\.wxml/g,`.${type}ml`)
   str = str.replace(/\.wxss/g,`.${type}ss`)
   fs.writeFileSync(file,str)

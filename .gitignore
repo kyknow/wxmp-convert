@@ -1,0 +1,7 @@
+.DS_Store
+npm-debug.log
+.vscode
+node_modules
+~*
+*.swp
+*.swo

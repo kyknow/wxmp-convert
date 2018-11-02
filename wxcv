@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+const Convert = require('./libs')
+let program = require('commander')
+
+program
+  .version('0.0.1')
+  .option('-p --path <path>', 'in path')
+  .option('-o --outDir <path>','out path')
+  .option('-t --type [name]','convert type')
+  .parse(process.argv)
+
+const {path,outDir,type} = program
+Convert.convert(path,outDir,type)
+.then((res) => {
+})
+.catch((err) => {
+  console.error(err)
+})

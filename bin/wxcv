@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const Convert = require('./libs')
+const Convert = require('../libs')
 let program = require('commander')
 
 program
